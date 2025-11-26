@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeSpace - Interior Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">Elegance Interiors</div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li>
+                    <div class="user-profile" id="userProfile">
+                        <span class="user-icon">👤</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="profile-dropdown" id="profileDropdown">
+            <a href="profile.html">My Profile</a>
+            <a href="#settings">Settings</a>
+            <a href="#preferences">Preferences</a>
+            <a href="#logout">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&h=900&fit=crop" alt="Modern Living Room">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h1>Transform Your Space</h1>
+                            <p>Discover stunning interior designs that bring your vision to life</p>
+                            <button class="cta-button">Explore Designs</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1600&h=900&fit=crop" alt="Luxury Bedroom">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h1>Luxury Interiors</h1>
+                            <p>Experience elegance and sophistication in every detail</p>
+                            <button class="cta-button">View Gallery</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&h=900&fit=crop" alt="Modern Kitchen">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h1>Innovative Designs</h1>
+                            <p>Where functionality meets contemporary aesthetics</p>
+                            <button class="cta-button">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1600&h=900&fit=crop" alt="Cozy Dining">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h1>Bespoke Solutions</h1>
+                            <p>Tailored designs that reflect your unique style</p>
+                            <button class="cta-button">Consult Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-nav prev" onclick="changeSlide(-1)">‹</div>
+                <div class="carousel-nav next" onclick="changeSlide(1)">›</div>
+
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator" onclick="goToSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&h=600&fit=crop" alt="Contemporary residential living room interior">
+                    </div>
+                    <div class="feature-icon">🏠</div>
+                    <h3>Residential Design</h3>
+                    <p>Create the perfect living space with our comprehensive residential interior design services.</p>
+                    <button type="button" class="service-toggle">View Residential Packages</button>
+                    <div class="service-details">
+                        <label class="service-option">
+                            <input type="checkbox" data-price="35000">
+                            <span>Condo Refresh (up to 40 sqm)</span>
+                            <span class="service-price">₱35,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="95000">
+                            <span>Family Home Full Design</span>
+                            <span class="service-price">₱95,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="180000">
+                            <span>Premium Villa Package</span>
+                            <span class="service-price">₱180,000+</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop" alt="Modern commercial office interior">
+                    </div>
+                    <div class="feature-icon">🏢</div>
+                    <h3>Commercial Spaces</h3>
+                    <p>Transform your office or retail space into an inspiring environment that drives success.</p>
+                    <button type="button" class="service-toggle">View Commercial Packages</button>
+                    <div class="service-details">
+                        <label class="service-option">
+                            <input type="checkbox" data-price="45000">
+                            <span>Small Office Styling (up to 50 sqm)</span>
+                            <span class="service-price">₱45,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="75000">
+                            <span>Retail / Boutique Concept</span>
+                            <span class="service-price">₱75,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="120000">
+                            <span>Café / Restaurant Interior</span>
+                            <span class="service-price">₱120,000+</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://www.bing.com/th/id/OIP.3TYREiL5AoAQmS-X9GsipAHaE7?w=241&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Luxury kitchen renovation interior">
+                    </div>
+                    <div class="feature-icon">✨</div>
+                    <h3>Luxury Renovations</h3>
+                    <p>Elevate your existing space with our premium renovation and redesign expertise.</p>
+                    <button type="button" class="service-toggle">View Renovation Packages</button>
+                    <div class="service-details">
+                        <label class="service-option">
+                            <input type="checkbox" data-price="150000">
+                            <span>Signature Kitchen Redesign</span>
+                            <span class="service-price">₱150,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="90000">
+                            <span>Spa-Inspired Bathroom</span>
+                            <span class="service-price">₱90,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="350000">
+                            <span>Full Home Luxury Upgrade</span>
+                            <span class="service-price">₱350,000+</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&h=600&fit=crop" alt="Custom furniture pieces in a modern interior">
+                    </div>
+                    <div class="feature-icon">🎨</div>
+                    <h3>Custom Furniture</h3>
+                    <p>Bespoke furniture pieces designed and crafted to perfectly complement your space.</p>
+                    <button type="button" class="service-toggle">View Furniture Pieces</button>
+                    <div class="service-details">
+                        <label class="service-option">
+                            <input type="checkbox" data-price="25000">
+                            <span>Custom TV Console</span>
+                            <span class="service-price">₱25,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="55000">
+                            <span>Dining Set (4–6 seater)</span>
+                            <span class="service-price">₱55,000+</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" data-price="60000">
+                            <span>Wardrobe / Closet System</span>
+                            <span class="service-price">₱60,000+</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="service-summary">
+                <div>
+                    <p class="service-summary-title">Estimated total for selected packages</p>
+                    <p class="service-summary-note">Indicative starting prices in Philippine Peso (₱). Final fees are confirmed after a design consultation.</p>
+                </div>
+                <div class="service-summary-right">
+                    <span class="service-total" id="serviceTotal">₱0</span>
+                    <button type="button" class="service-clear" id="serviceClear">Clear selection</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-brand">Elegance Interiors</p>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-copy"> 2025 Elegance Interiors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
